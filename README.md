@@ -3,7 +3,7 @@ Here's a detailed breakdown of your Supply Chain Management System Python progra
 ✅ Features of the Program
 Inventory Management
 
-View current stock levels.
+View current stock levels..
 
 Add stock (Restock feature).
 
