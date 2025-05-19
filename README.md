@@ -1,79 +1,55 @@
-Here's a detailed breakdown of Supply Chain Management System Python program:
+Features
+Inventory Management
 
-✅ Features of the Program
-1)Inventory Management
+Shows a list of products and their quantities.
+Allows restocking items (adding more stock to inventory).
+Real-time inventory updates after orders/restocking.
+Order Placement
 
-2)View current stock levels.
+Users can place orders for any listed product.
+Checks if enough stock is available to fulfill the order.
+Marks orders as “Fulfilled” or “Backordered” based on stock availability.
+Keeps a timestamped history of all orders.
+Supplier Management
 
-3)Add stock (Restock feature).
+Add new suppliers and the products they supply.
+Displays a list of all suppliers added during the session.
+Order History
 
-4)Reduce stock when orders are placed.
+Shows a table of all orders placed with time, product, quantity, and status.
+Allows exporting the order history to a CSV file.
+Technologies Used
+Python: The programming language used to write the entire program.
+tkinter: Python’s standard GUI (Graphical User Interface) library for building desktop applications.
+ttk: Themed tkinter widgets for a modern look (used for tables, dropdowns, etc.).
+csv: Python’s built-in module for reading and writing CSV (Comma-Separated Values) files (used for exporting orders).
+datetime: For generating readable timestamps for orders.
+How It Works
+Initialization
 
-5)Order Placement
+The program defines two main classes: Inventory (for managing stock) and SupplyChainApp (handles all GUI and logic).
+Predefined inventory items and quantities are set up when the app starts.
+User Interface
 
-6)Place orders for specific products and quantities.
-7)Automatically updates inventory levels.
-8)Displays order status: Fulfilled (if enough stock) or Backordered (if stock is insufficient).
-9)Maintains and displays a history of all orders.
-10)Supplier Management
-11)Add suppliers along with the products they supply.
-12)Display a list of all added suppliers.
-13)Export Orders
-14)Export order history to a CSV file.
-15)User Interface
-16)Graphical User Interface (GUI) built using tkinter.
-17)Organized layout with labeled sections for each functionality.
+The main window displays sections for Inventory, Placing Orders, Restocking, Supplier Management, and Order History—all with interactive widgets.
+Inventory and orders are shown in tables (using ttk.Treeview).
+Order Placement
 
-🛠️ Technologies Used
-Technology	Purpose:
-Python	Main programming language
-Tkinter	For creating the graphical user interface (GUI)
-ttk (Themed Widgets)	For styled GUI components like Treeview, Combobox
-messagebox & filedialog	To show alerts and save file dialogs
-datetime	To timestamp orders
-csv	To export orders to a CSV file
+The user selects a product and quantity and submits an order.
+If enough stock exists, inventory is reduced, and the order is marked "Fulfilled"; if not, it’s "Backordered."
+Orders are added to the history with a timestamp.
+Restocking
 
-⚙️ How It Works (Logic and Flow)
-Startup
+The user can select a product and enter a quantity to add to the inventory.
+Inventory is updated immediately.
+Supplier Management
 
-run_supply_chain_app() creates the main window and initializes the app.
-
-SupplyChainApp class sets up inventory, suppliers, orders, and GUI widgets.
-
-Inventory System
-
-Inventory class manages a dictionary of products and quantities.
-
-Provides add_stock(), reduce_stock(), and get_stock() methods.
-
-Placing Orders
-
-User selects a product and enters quantity.
-
-On submit:
-
-The app checks if stock is enough.
-
-Reduces stock if available.
-
-Adds the order to history with time, product, quantity, and status.
-
-Restocking Inventory
-
-User selects a product and quantity to add.
-
-Updates the inventory.
-
-Managing Suppliers
-
-User inputs a supplier name and the product they supply.
-
-Adds this information to a list and displays it.
-
+Users can add new suppliers and products they supply.
+Supplier entries are shown in a list.
 Order Export
 
-User clicks “Export Orders to CSV”.
+The user can export the order history to a CSV file for external record-keeping.
+In short:
 
-Opens file save dialog.
-
-Writes all order data to a .csv file.
+The application is a GUI-based supply chain management tool built in Python, using tkinter for the interface and some standard libraries for data handling.
+It supports inventory tracking, order management, supplier tracking, and data export, all through a user-friendly interface.
