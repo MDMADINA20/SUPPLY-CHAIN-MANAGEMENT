@@ -1,6 +1,7 @@
 Here's a detailed breakdown of Supply Chain Management System Python program:
 
 ✅ Features of the Program
+
 1)Inventory Management
 
  i)View current stock levels.
