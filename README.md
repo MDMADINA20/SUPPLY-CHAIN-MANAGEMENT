@@ -1,4 +1,4 @@
-Here's a detailed breakdown of your Supply Chain Management System Python program:
+Here's a detailed breakdown of Supply Chain Management System Python program:
 
 ✅ Features of the Program
 1)Inventory Management
@@ -38,53 +38,58 @@ Here's a detailed breakdown of your Supply Chain Management System Python progra
 🛠️ Technologies Used
 Technology	Purpose
   1)Python	Main: programming language
+  
   2)Tkinter:For creating the graphical user interface (GUI)
+  
   3)ttk (Themed Widgets):For styled GUI components like Treeview, Combobox
+  
   4)messagebox & filedialog:To show alerts and save file dialogs
+  
   5)datetime:To timestamp orders
+  
   6)csv:To export orders to a CSV file
 
 ⚙️ How It Works (Logic and Flow)
-Startup
+ 1)Startup
 
-run_supply_chain_app() creates the main window and initializes the app.
+  i)run_supply_chain_app() creates the main window and initializes the app.
 
-SupplyChainApp class sets up inventory, suppliers, orders, and GUI widgets.
+  ii)SupplyChainApp class sets up inventory, suppliers, orders, and GUI widgets.
 
-Inventory System
+ 2)Inventory System
 
 Inventory class manages a dictionary of products and quantities.
 
 Provides add_stock(), reduce_stock(), and get_stock() methods.
 
-Placing Orders
+ 3)Placing Orders
 
-User selects a product and enters quantity.
+  i)User selects a product and enters quantity.
 
-On submit:
+  ii)On submit:
 
-The app checks if stock is enough.
+   The app checks if stock is enough.
 
-Reduces stock if available.
+  iii)Reduces stock if available.
 
-Adds the order to history with time, product, quantity, and status.
+  iv)Adds the order to history with time, product, quantity, and status.
 
-Restocking Inventory
+ 4)Restocking Inventory
 
-User selects a product and quantity to add.
+  i)User selects a product and quantity to add.
 
-Updates the inventory.
+  ii)Updates the inventory.
 
-Managing Suppliers
+ 5)Managing Suppliers
 
-User inputs a supplier name and the product they supply.
+  i)User inputs a supplier name and the product they supply.
 
-Adds this information to a list and displays it.
+  ii)Adds this information to a list and displays it.
 
-Order Export
+ 6)Order Export
 
-User clicks “Export Orders to CSV”.
+  i)User clicks “Export Orders to CSV”.
 
-Opens file save dialog.
+  ii)Opens file save dialog.
 
-Writes all order data to a .csv file.
+  iii)Writes all order data to a .csv file.
