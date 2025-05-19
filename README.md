@@ -1,11 +1,16 @@
 Here's a detailed breakdown of Supply Chain Management System Python program:
 
 ✅ Features of the Program
-1)Inventory Management 
+1)Inventory Management
+
 2)View current stock levels.
+
 3)Add stock (Restock feature).
+
 4)Reduce stock when orders are placed.
+
 5)Order Placement
+
 6)Place orders for specific products and quantities.
 7)Automatically updates inventory levels.
 8)Displays order status: Fulfilled (if enough stock) or Backordered (if stock is insufficient).
