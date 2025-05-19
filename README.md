@@ -1,42 +1,26 @@
-Here's a detailed breakdown of your Supply Chain Management System Python program:
+Here's a detailed breakdown of Supply Chain Management System Python program:
 
 ✅ Features of the Program
-Inventory Management
-
-View current stock levels..
-
-Add stock (Restock feature).
-
-Reduce stock when orders are placed.
-
-Order Placement
-
-Place orders for specific products and quantities.
-
-Automatically updates inventory levels.
-
-Displays order status: Fulfilled (if enough stock) or Backordered (if stock is insufficient).
-
-Maintains and displays a history of all orders.
-
-Supplier Management
-
-Add suppliers along with the products they supply.
-
-Display a list of all added suppliers.
-
-Export Orders
-
-Export order history to a CSV file.
-
-User Interface
-
-Graphical User Interface (GUI) built using tkinter.
-
-Organized layout with labeled sections for each functionality.
+1)Inventory Management
+2)View current stock levels.
+3)Add stock (Restock feature).
+4)Reduce stock when orders are placed.
+5)Order Placement
+6)Place orders for specific products and quantities.
+7)Automatically updates inventory levels.
+8)Displays order status: Fulfilled (if enough stock) or Backordered (if stock is insufficient).
+9)Maintains and displays a history of all orders.
+10)Supplier Management
+11)Add suppliers along with the products they supply.
+12)Display a list of all added suppliers.
+13)Export Orders
+14)Export order history to a CSV file.
+15)User Interface
+16)Graphical User Interface (GUI) built using tkinter.
+17)Organized layout with labeled sections for each functionality.
 
 🛠️ Technologies Used
-Technology	Purpose
+Technology	Purpose:
 Python	Main programming language
 Tkinter	For creating the graphical user interface (GUI)
 ttk (Themed Widgets)	For styled GUI components like Treeview, Combobox
